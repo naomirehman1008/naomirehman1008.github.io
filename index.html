@@ -31,11 +31,11 @@
                 <div id="about-text">
                     <p>
                         <!-- Put Connections *** in here, what I've worked on and how that relates to my-->
-                        Hello! I'm Naomi, a computer architect passionate about making things go fast for less. I interpret the term architect loosely, and as such I'm open to all avenues for achieving this goal, with my work ranging from writing Verilog to building AI models. My research currently focuses on making large language models more efficient from both the architecture and algorithmic side. I'm pursuing my PhD at UC Santa Barbara in the ArchLab, co-advised by Tim Sherwood and Jonathan Balkind. 
+                        Hello! I'm Naomi, a computer architect passionate about making things go fast for less. Architecture doesn't exist in isolation, so I like to consider challenges and opportunities across both hardware and applications. My work ranges anywhere from writing Verilog to working in vLLM. My research currently focuses on making language models more efficient from both the architecture and algorithmic side. I'm pursuing my PhD at UC Santa Barbara in the ArchLab, co-advised by Tim Sherwood and Jonathan Balkind. 
                     <p/>
                     <br>
                     <p>
-                        Before coming to Santa Barbara I did my undergraduate in Computer Science and Computer Engineering at UCSC, where I worked with professor Heiner Litz on CPU architecture and professor Tyler Sorensen on GPU programming model specifications. I've interned several times on NVIDIA's GPU Architecture team, where I've worked on various projects including functional testing and feature design. In my free time, I enjoy reading and baking.
+                        Before coming to Santa Barbara I did my undergrad in Computer Science and Computer Engineering at UCSC, where I worked with Professor Heiner Litz on CPU frontend architecture and Professor Tyler Sorensen on GPU programming model specifications. I've interned several times on NVIDIA's GPU Architecture team, where I've worked on various projects including functional testing and feature design. In my free time, I enjoy reading and baking.
                     </p>
                     <br>
                     <p>
@@ -51,12 +51,12 @@
             <div class="project">
                 <h3>Efficient Fine-Tuning on Edge Devices</h3>
                 <h4>Advised by Profs. Tim Sherwood and Jon Balkind</h4>
-                <p>While edge devices are increasingly incorporating small, quantized neural processors for inference, they lack the higher precision hardware needed for training. Zeroth Order training has been shown to successfully train even at low precisions, however, in practice it requires significanlty more training steps and thus more energy than backpropegation. In this work, we aim to close the energy gap between backpropegation and zeroth order training through hardware-software codesign, enabling user specialization through finetuning on their devices.</p>
+                <p>While edge devices are increasingly incorporating small, quantized neural processors for inference, they lack the higher precision hardware needed for training. At the same time, these devices hold rich user data that could personalize models, but sending that data to the cloud for training raises privacy concerns. Zeroth Order training has been shown to successfully train even at low precisions, however, in practice it requires significantly more training steps and thus more energy than backpropagation. In this work, we aim to close the energy gap between backpropagation and zeroth order training through hardware-software co-design, enabling user specialization through fine-tuning on their devices.</p>
             </div>
             <div class="project">
                 <h3>Memory Efficient Language Models</h3>
                 <h4>In Collaboration with Prof. Xifeng Yan</h4>
-                <p>While serving LLM models, their KV tensors are cached on device rather than recomputed each step. The KV cache consumes a significant portion of the HBM, limiting the maximum acheivable batch size. In this work we significanlty reduce the KV cache footprint, increasing the achievable batch size and serving throughput.</p>
+                <p>While serving large language models, their KV tensors are cached on device rather than recomputed each step. The KV cache consumes a significant portion of VRAM, limiting the maximum achievable batch size. In this work, we significantly reduce the KV cache footprint through a more efficient model architecture, increasing the batch size and serving throughput.</p>
             </div>
             <div class="project">
                 <h3>GPU Subgroup Semantics (SIMT-Step)</h3>
